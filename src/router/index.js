@@ -12,11 +12,11 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'HelloWorld',
-    //   component: HelloWorld
-    // },
+    {
+      path: '/',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
     // 下面都是固定的写法
     {
       path: '/login',
