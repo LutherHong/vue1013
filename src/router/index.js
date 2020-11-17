@@ -12,10 +12,20 @@ Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
+    // {
+    //   path: '/',
+    //   name: 'HelloWorld',
+    //   component: HelloWorld
+    // },
+    // 默认打开首页
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'index',
+      redirect: '/index',
+      component: AppIndex,
+      meta: {
+        requireAuth: true
+      }
     },
     // 下面都是固定的写法
     {
